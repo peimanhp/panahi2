@@ -1,0 +1,664 @@
+:root {
+  --background: #f7f7fb;
+  --red: #fc2947;
+  --red-dark: #e3233e;
+  --lightRed: #fed4da;
+  --purple: #553378;
+  --gray: #e6e6e6;
+  --mobile-nav: #636c78;
+}
+
+@font-face {
+  font-family: "peida-regular";
+  src: url(../fonts/PeydaWeb-Regular.woff2);
+}
+
+@font-face {
+  font-family: "moraba";
+  src: url(../fonts/Morabba-Bold\ [@ClubEdits].ttf);
+}
+
+h1 {
+  font-family: "moraba";
+  font-size: 3.7rem !important;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "peida-regular";
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--mobile-nav) !important;
+}
+
+body {
+  background-color: #f7f7fb !important;
+  overflow-x: hidden;
+  padding: 0 !important;
+}
+
+::placeholder {
+  font-family: "peida-regular" !important;
+}
+
+.navbar-transparent {
+  transition: ease-in-out 0.2s;
+  height: 6.5em;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute !important;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.page-title {
+  font-size: 60px !important;
+  padding-top: 100px;
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.red-title {
+  font-family: "moraba";
+  color: var(--red);
+  font-weight: 700;
+  font-size: 3.7rem;
+  transition: all 0.2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    var(--red),
+    var(--red) 50%,
+    var(--purple) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 0;
+}
+
+.red-title:hover {
+  transition: all 0.2s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 100%;
+}
+
+.border-dashed {
+  border-bottom: 1px dashed gray;
+}
+
+.btn-stars {
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: fit-content !important;
+}
+
+.sub-title {
+  color: white !important;
+  margin-top: 1.5em;
+}
+
+.second-sec-title {
+  font-size: 3rem !important;
+  font-weight: 900;
+  margin: 1em 0;
+}
+
+.search-bar {
+  border-radius: 1em !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid white !important;
+}
+
+.search-bar::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-btn {
+  position: absolute !important;
+  left: 0;
+}
+
+.logo {
+  width: 3em;
+}
+
+.btn-dark-red {
+  border-radius: 1em !important;
+  color: white !important;
+  border: 1px solid var(--red) !important;
+  background: rgba(252, 41, 71, 0.2);
+}
+
+.btn-dark-red:hover {
+  background: var(--red) !important;
+}
+
+.btn-red {
+  border-radius: 1em !important;
+  color: white !important;
+  background-color: var(--red) !important;
+}
+
+.btn-red:hover {
+  background-color: var(--purple) !important;
+}
+
+.btn-head {
+  border-radius: 1em !important;
+  color: white !important;
+  background-color: var(--red) !important;
+}
+
+.input {
+  background-color: white !important;
+  border: none;
+  width: 130px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 1em !important;
+}
+
+.btn-gray {
+  border-radius: 1em !important;
+  color: white !important;
+  background-color: var(--mobile-nav) !important;
+}
+
+.first-section-btns {
+  box-sizing: border-box !important;
+  width: 9.5rem;
+}
+
+.features {
+  transform: translateY(-1px);
+  transition: all 0.5s;
+}
+.features:hover {
+  transform: translateY(-10px);
+}
+
+.features h3 {
+  font-weight: 900;
+}
+
+.features-before {
+  width: 100%;
+  height: 85%;
+  border-radius: 1em !important;
+  content: "";
+  background: var(--red) !important;
+  z-index: -1 !important;
+  transition: all 0.5s;
+}
+.features-before:hover {
+  height: 92%;
+  transform: translateY(7px) !important;
+  z-index: -1 !important;
+}
+
+.course-title {
+  margin-top: 1.2em;
+  color: white;
+}
+
+.btn-head:hover {
+  color: black !important;
+  background-color: var(--gray) !important;
+}
+
+.btn-gray:hover {
+  background-color: black !important;
+}
+
+.offcanvas {
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: url(/panahi/assets/img/aerial-view-business-team-1.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.first-section::after {
+  position: absolute;
+  background: url(/panahi/assets/img/aerial-view-business-team-1.png);
+  background-position: 0px -275px;
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -118px;
+  height: 244px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.panahi-photo {
+  object-fit: cover !important;
+  border: solid white 10px;
+  border-radius: 36px;
+  margin-top: 1em;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.wrapper h2 span {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--red);
+}
+
+.wrapper p {
+  text-align: justify;
+  font-weight: 500;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.titles-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.second-section {
+  margin-top: 7em;
+}
+
+.third-section {
+  margin-top: 4em;
+}
+
+.courses-title,
+.courses-title * {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.courses-content {
+  font-size: 1.4em;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.course-name {
+  font-size: 1.4em;
+  margin-top: 0.3em;
+}
+
+.price {
+  background-color: #f8f8f8;
+  border: 2px dashed gray;
+  border-radius: 1em;
+  padding: 0.7em;
+}
+
+.price h4 {
+  font-weight: 900;
+  margin: 0;
+}
+
+.course-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  background-color: var(--background);
+  padding: 1em;
+  border-radius: 25px;
+  box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1);
+  min-width: 100%;
+}
+
+.course-details-texts {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.border-dashed {
+  padding-bottom: 0.5em;
+  border-bottom: 2px dashed #cdcdcd;
+}
+
+.red-background {
+  background-color: var(--red);
+}
+
+.slide-item {
+  padding: 2em;
+}
+
+.slider-img {
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+.splide__arrows--rtl .splide__arrow--prev {
+  right: -2em !important;
+}
+
+.splide__arrows--rtl .splide__arrow--next {
+  left: -2em !important;
+}
+
+.splide__arrow {
+  background: var(--background) !important;
+}
+
+.girl-photo {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.girl-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-time {
+  font-family: "peida-regular" !important;
+  font-weight: 600;
+  text-align: center;
+  width: 130px;
+  height: 46px;
+  flex-shrink: 0;
+  background: #f1f0f7;
+  color: var(--mobile-nav);
+}
+
+.btn-resend {
+  font-size: 2em;
+  text-align: center;
+  width: 130px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.login-title {
+  font-size: 2.5em !important;
+  margin-top: 2.5em;
+  margin-bottom: 0.4em;
+}
+
+.form-sms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 282px;
+}
+
+.sms-wrapper {
+  background-color: #f8f7fa;
+  transform: translateX(1px);
+  border-radius: 2em;
+}
+
+.input-code {
+  font-family: "peida-regular" !important;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  height: 46px;
+  flex-shrink: 0;
+  background: #f1f0f7;
+  color: var(--mobile-nav);
+}
+
+.btn-sms {
+  font-size: 1.3em !important;
+  height: 46px;
+}
+
+.red-link {
+  color: var(--red);
+}
+
+.text-login {
+  color: var(--mobile-nav);
+  text-align: justify;
+  text-justify: inter-character;
+  font-weight: 500;
+  line-height: 163.5%;
+}
+
+.login-wrapper {
+  display: flex;
+  width: 775px;
+  height: 500px;
+  background-color: var(--red);
+  border-radius: 2em;
+}
+
+.desktop-view {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-login {
+  background-color: #fff;
+}
+
+.course-item {
+  border-top: 1px solid gray;
+  padding: 0.7em 0;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-top: 1px solid rgb(208, 208, 208) !important;
+}
+
+.details img {
+  transform: scale(0.8);
+}
+
+.accordion-button::after {
+  background-image: url(/panahi/assets/img/arrow.svg) !important;
+  background-size: 2em !important;
+  background-position: center;
+  padding: 1em;
+  margin-right: auto;
+  margin-left: 0 !important;  
+}
+
+.accordion-button:not(.collapsed) {
+  color: none !important;
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.accordion {
+  --bs-accordion-border-radius: 1em !important;  
+  --bs-accordion-inner-border-radius: 1em !important;
+  --bs-accordion-border-color: none !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#sessions {
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 526px) {
+  .first-section::after {
+    background-position: 0px -360px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #a {
+    order: 2;
+  }
+  #b {
+    order: 1;
+  }
+  .mobile-hidden {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 992px) {
+  .nav-link {
+    color: white !important;
+  }
+  .first-section::after {
+    bottom: -59px;
+    height: 111px;
+    background-position: 0px -348px;
+  }
+  .splide__arrows--rtl .splide__arrow--prev {
+    right: -2em !important;
+  }
+  .splide__arrows--rtl .splide__arrow--next {
+    left: -2em !important;
+  }
+  .red-circle-login {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .desktop-view {
+    display: none !important;
+  }
+  .titles-wrapper {
+    margin-top: 4em !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .first-section::after {
+    background-position: 0 -275px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-active {
+    border-bottom: 2px solid white !important;
+    height: 90%;
+    padding-bottom: -20px;
+  }
+  .panahi-photo {
+    min-width: 450px;
+    min-height: 450px;
+    border: solid white 18px;
+    border-radius: 68px;
+  }
+  .photo-wrapper {
+    justify-content: end;
+  }
+  .titles-wrapper {
+    justify-content: start;
+    padding-right: 0;
+  }
+  h1 {
+    font-size: 5.8rem !important;
+  }
+  .red-title {
+    font-size: 5.8rem;
+  }
+  h2 {
+    font-size: 2.5rem !important;
+  }
+  .first-section-btns {
+    width: 12em;
+    font-size: 1.3em !important;
+  }
+  .titles {
+    padding-top: 3em;
+  }
+  .second-section {
+    margin-top: 12em;
+  }
+  .mobile-view {
+    display: none !important;
+  }
+  .navbar-transparent {
+    position: fixed !important;
+  }
+  #feature2,
+  #feature4 {
+    margin-top: 1.5em;
+  }
+  #sessions {
+    scroll-margin-top: 100px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .first-section {
+    background-size: 100vw;
+  }
+  .first-section::after {
+    background-size: 100vw;
+  }
+}

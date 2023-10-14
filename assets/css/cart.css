@@ -1,0 +1,455 @@
+:root {
+  --background: #f7f7fb;
+  --red: #fc2947;
+  --lightRed: #fed4da;
+  --purple: #553378;
+  --gray: #e6e6e6;
+  --mobile-nav: #636c78;
+}
+
+@font-face {
+  font-family: "peida-regular";
+  src: url(../fonts/PeydaWeb-Regular.woff2);
+}
+
+@font-face {
+  font-family: "moraba";
+  src: url(../fonts/Morabba-Bold\ [@ClubEdits].ttf);
+}
+
+body {  
+  background-color: #f7f7fb !important;
+}
+
+h1 {
+  font-family: "moraba";
+  font-size: 3.7rem !important;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "peida-regular";
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--mobile-nav) !important;
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0 !important;
+}
+
+::placeholder {
+  font-family: "peida-regular" !important;
+}
+
+.wrapper {
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.product-img {
+  width: 50px;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.btn-coupon {
+  height: 40px;
+}
+
+.sum-bascket {
+  min-height: 209px;
+}
+
+.btn-coupon {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  transform: translateX(-5px);
+}
+
+.coupon-form {
+  width: 300px;
+}
+
+.red-title {
+  font-family: "moraba";
+  color: var(--red);
+  font-weight: 700;
+  font-size: 3.7rem;
+  transition: all 0.2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    var(--red),
+    var(--red) 50%,
+    var(--purple) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 0;
+}
+
+.red-title:hover {
+  transition: all 0.2s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 100%;
+}
+
+.nav-active {
+  border-bottom: 2px solid white !important;
+  height: 90%;
+  padding-bottom: -20px;  
+}
+
+.sub-title {
+  margin-top: 1.5em;
+}
+
+.search-bar {
+  border-radius: 1em !important;
+  background: #f1f0f7;
+}
+
+.logo {
+  width: 3em;
+}
+
+.btn-red {
+  border-radius: 1em !important;
+  color: white !important;
+  background-color: var(--red) !important;
+}
+
+.input {
+  background-color: #f7f7fb !important;
+  border: none;
+  width: 300px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 1em !important;
+  padding: 0 1em;
+}
+
+.weight-thick {
+  font-weight: 900;
+}
+
+.validation-message {
+  display: none;
+}
+.validation-message.show {
+  display: block;
+}
+
+#pay-btn {
+  height: 40px;
+}
+
+.btn-gray {
+  border-radius: 1em !important;
+  color: white !important;
+  background-color: var(--mobile-nav) !important;
+}
+
+.first-section-btns {
+  box-sizing: border-box !important;
+  width: 9.5rem;
+}
+
+.btn-red:hover {
+  background-color: var(--purple) !important;
+}
+
+.btn-gray:hover {
+  background-color: black !important;
+}
+
+.offcanvas {
+  background-color: var(--mobile-nav) !important;
+  opacity: 0.9 !important;
+}
+
+.bg-body-tertiary {
+  height: 6.5em !important;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgb(256, 256, 256) 13.52%,
+    #f3eef3 117.95%
+  );
+}
+
+.first-section::after {
+  position: absolute;
+  background-color: #f5f1f5;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -118px;
+  height: 244px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.panahi-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover !important;
+  border: solid white 10px;
+  border-radius: 36px;
+  margin-top: 1em;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.titles-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.second-section {
+  margin-top: 7em;
+}
+
+.courses-title {
+  font-weight: 700;
+  font-size: 2.8em;
+}
+
+.courses-content {
+  font-size: 1.4em;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.course-name {
+  font-size: 1.4em;
+  margin-top: 0.3em;
+}
+
+.price {
+  font-family: "moraba";
+  font-size: 1em;
+}
+
+.course-card-content {
+  max-width: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  background-color: var(--background);
+  padding: 1em;
+  border-radius: 25px;
+  box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slide-item {
+  padding: 2em;
+}
+
+.slider-img {
+  object-fit: contain;
+}
+
+.splide__arrows--rtl .splide__arrow--prev {
+  right: -2em !important;
+}
+
+.splide__arrows--rtl .splide__arrow--next {
+  left: -2em !important;
+}
+
+.splide__arrow {
+  background: var(--background) !important;
+}
+
+.girl-photo {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.girl-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-time {
+  font-family: "peyda-regular" !important;
+  font-weight: 600;
+  text-align: center;
+  width: 130px;
+  height: 46px;
+  flex-shrink: 0;
+  background: #f1f0f7;
+  color: var(--mobile-nav);
+}
+
+.btn-resend {
+  font-size: 2em;
+  text-align: center;
+  width: 130px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.login-title {
+  font-size: 2.5em !important;
+  margin-top: 2.5em;
+  margin-bottom: 0.4em;
+}
+
+.form-sms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 282px;
+}
+
+.sms-wrapper {
+  background-color: #F8F7FA;
+  transform: translateX(1px);
+  border-radius: 2em;;
+}
+
+.red-link {
+  color: var(--red);
+}
+
+.text-login {
+  color: var(--mobile-nav);
+  text-align: justify;
+  text-justify: inter-character;
+  font-weight: 500;
+  line-height: 163.5%; /* 22.89px */
+}
+
+.login-wrapper {
+  display: flex;
+  width: 775px;
+  height: 500px;
+  background-color: var(--red);
+  border-radius: 2em;
+}
+
+.desktop-view {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-login {
+  background-color: #fff;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  .input-code {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-link {
+    color: white !important;
+  }
+  .first-section::after {
+    bottom: -59px;
+    height: 111px;
+  }
+  .splide__arrows--rtl .splide__arrow--prev {
+    right: -2em !important;
+  }
+  .splide__arrows--rtl .splide__arrow--next {
+    left: -2em !important;
+  }
+  .red-circle-login {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .desktop-view {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .panahi-photo {
+    min-width: 450px;
+    min-height: 450px;
+    border: solid white 18px;
+    border-radius: 68px;
+  }
+  .photo-wrapper {
+    justify-content: end;
+  }
+  .titles-wrapper {
+    justify-content: start;
+    padding-right: 0;
+  }
+  h1 {
+    font-size: 5.8rem !important;
+  }
+  .red-title {
+    font-size: 5.8rem;
+  }
+  h2 {
+    font-size: 2.5rem !important;
+  }
+  .first-section-btns {
+    width: 12em;
+    font-size: 1.3em !important;
+  }
+  .titles {
+    padding-top: 3em;
+  }
+  .second-section {
+    margin-top: 12em;
+  }  
+  .mobile-view {
+    display: none !important;
+  }
+}
