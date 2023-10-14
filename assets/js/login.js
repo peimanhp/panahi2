@@ -43,22 +43,9 @@ function grabDom() {
   }
 }
 
-// submit.addEventListener("click", validate);
-
-// function validate(e) {
-//   if (!mobile.value) {
-//     e.preventDefault();
-//   }
-// }
-
 window.onload = () => {
   submit.setAttribute("disabled", "");
   input.focus();
-  // input.onkeydown = (e) => {
-  //   if (e.keyCode == 13) {
-  //     validate();
-  //   }
-  // };
   mobile.onpaste = (e) => {
     e.preventDefault();
   };

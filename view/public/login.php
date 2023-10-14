@@ -14,27 +14,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ((($mobileNumber != null) || ($mobileNumber != '')) && (strlen($mobileNumber) == 11) && (substr($mobileNumber, 0, 1) == 0) && (substr($mobileNumber, 1, 1) == 9) && ((substr($mobileNumber, 2, 1) != 4) || (substr($mobileNumber, 2, 1) != 5) || (substr($mobileNumber, 2, 1) != 6) || (substr($mobileNumber, 2, 1) != 7) || (substr($mobileNumber, 2, 1) != 8))) {
 
         $_SESSION['mobileNumber'] =  $mobileNumber;
-        ini_set("soap.wsdl_cache_enabled", "0");
-        try {
-            $client = new SoapClient("http://sms.farazsms.com/class/sms/wsdlservice/server.php?wsdl");
-            $user = "09361464409";
-            $pass = "A0142426a@";
-            $fromNum = "۵۰۰۰۱۲۵۴۷۵";
-            $toNum = $mobileNumber;
+        // ini_set("soap.wsdl_cache_enabled", "0");
+        // try {
+        //     $client = new SoapClient("http://sms.farazsms.com/class/sms/wsdlservice/server.php?wsdl");
+        //     $user = "09361464409";
+        //     $pass = "A0142426a@";
+        //     $fromNum = "۵۰۰۰۱۲۵۴۷۵";
+            // $toNum = $mobileNumber;
             $randOTP = rand(100000, 999999);
             $_SESSION["OTPSeNd"] = $randOTP;
-            $op = "send";
-            $pattern_code = "0twc9x9nbtwrsnf";
-            $input_data = array(
-                "verification-code" => $randOTP
-            );
-            echo $client->sendPatternSms($fromNum, $toNum, $user, $pass, $pattern_code, $input_data);
-            $_SESSION["OTPSeNd"] = $randOTP;
-            echo $client->SendSMS($fromNum, $toNum, $messageContent, $user, $pass, $op);
-            echo $status;
-        } catch (SoapFault $ex) {
-            echo $ex->faultstring;
-        }
+            // $op = "send";
+            // $pattern_code = "0twc9x9nbtwrsnf";
+            // $input_data = array(
+            //     "verification-code" => $randOTP
+            // );
+            // echo $client->sendPatternSms($fromNum, $toNum, $user, $pass, $pattern_code, $input_data);
+            // $_SESSION["OTPSeNd"] = $randOTP;
+        //     echo $client->SendSMS($fromNum, $toNum, $messageContent, $user, $pass, $op);
+        //     echo $status;
+        // } catch (SoapFault $ex) {
+        //     echo $ex->faultstring;
+        // }
 
         header("Location: /panahi/view/private/login.php");
 
@@ -60,14 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="text-danger mb-2 text-center validation-message" role="alert">
                     - لطفا شماره موبایل را بصورت صحیح وارد نمائید!
                 </div>
-<<<<<<< HEAD
                 <input dir="ltr" class="input input-code mb-3" type="number" placeholder="شماره موبایل" name="mobileNumber" autofocus>
 
                 <input type="submit" class="btn btn-red btn-sms mb-3" value="ارسال رمز یکبار مصرف">
-=======
-                <input class="input input-code mb-3" type="text" placeholder="شماره موبایل">
-                <button class="btn btn-red btn-sms mb-3">ارسال رمز یکبار مصرف</button>
->>>>>>> 0203f76d4b847b6a66d85103b9694a7500861923
             </form>
         </section>
         <section class="girl-wrapper">

@@ -63,13 +63,6 @@ body {
   font-family: "peida-regular" !important;
 }
 
-.wrapper {
-  padding: 1em;
-  background-color: white;
-  border-radius: 1em;
-  margin-bottom: 1em;
-}
-
 .red-title {
   font-family: "moraba";
   color: var(--red);
@@ -130,10 +123,6 @@ body {
   height: 46px;
   flex-shrink: 0;
   border-radius: 1em !important;
-}
-
-.weight-thick {
-  font-weight: 900;
 }
 
 .validation-message {
@@ -288,7 +277,6 @@ body {
 }
 
 .input-time {
-  font-family: "peyda-regular" !important;
   font-weight: 600;
   text-align: center;
   width: 130px;

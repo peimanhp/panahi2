@@ -8,7 +8,6 @@ ob_start();
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
   <title><?php echo "عارفه پناهی | $title"; ?></title>
 
   <?php if ($title == "سبد خرید") {
@@ -18,13 +17,6 @@ ob_start();
     echo "  <link rel='stylesheet' href='/panahi/assets/css/style.css' />
 ";
   } ?>
-=======
-  <title><?php echo "عارفه پناهی | $title";?></title>
-
-  <?php if($title == "سبد خرید"){ echo "<link rel='stylesheet' href='/panahi/assets/css/cart.css' />
-";}else{echo "  <link rel='stylesheet' href='/panahi/assets/css/style.css' />
-";} ?>
->>>>>>> 0203f76d4b847b6a66d85103b9694a7500861923
   <link href="/panahi/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="/panahi/assets/css/splide.min.css" rel="stylesheet">
 </head>
